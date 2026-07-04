@@ -1,0 +1,11 @@
+# Виртуальное окружение
+bin/
+lib/
+pyvenv.cfg
+
+# Кэш Python
+__pycache__/
+*.pyc
+
+# Настройки PyCharm
+.idea/
