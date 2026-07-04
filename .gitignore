@@ -1,11 +1,14 @@
-# Виртуальное окружение
+# Virtual environment
 bin/
 lib/
 pyvenv.cfg
 
-# Кэш Python
+# Python cache
 __pycache__/
-*.pyc
+*.py[cod]
 
-# Настройки PyCharm
+# PyCharm
 .idea/
+
+# macOS
+.DS_Store
