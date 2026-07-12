@@ -1,53 +1,120 @@
-body{
-    background-color:#ffeef5;
-     margin: 0;
+body {
+    margin: 0;
     height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: Arial, sans-serif;
 }
 
-.card{
+.card {
+    width: 500px;
 
-    width:500px;
+    background: #FFF6F8;
 
-    background:white;
+    padding: 30px;
 
-    margin:auto;
+    border-radius: 25px;
 
-    padding:30px;
+    text-align: center;
 
-    border-radius:20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-
+    position: relative;
 }
 
-button{
-
-    background:#ff5d8f;
-
-    color:white;
-
-    font-size:18px;
-
-    border:none;
-
-    padding:15px 30px;
-
-    border-radius:12px;
-
-    cursor:pointer;
-    transition:0.3s;
-
+h1 {
+    font-size: 36px;
+    color: #5a4a4a;
+    margin-bottom: 40px;
 }
 
-button:hover{
+.buttons {
+    margin-top: 25px;
 
-    background:#ff2f70;
+    position: relative;
 
+    width: 320px;
+    height: 60px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#invite{
-    display:none;
+button {
+    width: 140px;
+    height: 55px;
+
+    background: #ff6b9d;
+    color: white;
+
+    border: none;
+    border-radius: 15px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #ff4f89;
+}
+
+#yes {
+    position: absolute;
+    left: 0;
+}
+
+#no {
+    position: absolute;
+    right: 0;
+
+    background: white;
+    color: #ff6b9d;
+    border: 2px solid #ff6b9d;
+}
+
+#message{
+    margin-top:20px;
+    color:#5a4a4a;
+    font-size:22px;
+    font-weight:bold;
+
+    opacity:0;
+    transition:0.5s;
+}
+
+#screen2 {
+    display: none;
+}
+
+.screen {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+img{
+
+    width:220px;
+
+    margin-top:20px;
+
+    border-radius:15px;
+
 }

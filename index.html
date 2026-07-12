@@ -1,45 +1,56 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
-    <title>Приглашение</title>
-   <link rel="stylesheet" href="style.css">
-</head>
+    <title>Приглашение ❤️</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
+
+<!-- Первое окно -->
+<div class="screen" id="screen1">
 
     <div class="card">
 
-        <h1>💌 Приглашение</h1>
+        <h1>Ты пойдешь со мной на свидание?</h1>
 
-        <h2>Привет!</h2>
+        <div class="buttons">
 
-        <p>
-            Я хочу пригласить тебя на встречу.
-        </p>
+            <button id="yes">ДА ❤️</button>
 
-        <hr>
-
-        <button>💖 Я приду</button>
-
-        <div id="invite">
-
-            <h3>📅 Дата</h3>
-            <p>20 июля 2026</p>
-
-            <h3>🕖 Время</h3>
-            <p>19:00</p>
-
-            <h3>📍 Место</h3>
-            <p>Кофейня</p>
+            <button id="no">НЕТ 💔</button>
 
         </div>
 
+        <p id="message"></p>
+
     </div>
 
-    <script src="script.js"></script>
+</div>
+
+<!-- Второе окно -->
+<div class="screen" id="screen2">
+
+    <div class="card">
+
+        <h2>❤️ Буду очень ждать нашей встречи! ❤️</h2>
+
+        <p>📅 Дата: 15 июля 2026</p>
+
+        <p>🕖 Время: 19:00</p>
+
+        <p>📍 Место: Surf Coffee</p>
+
+        <img src="images/cat.jpg">
+
+        <h3>❤️ До встречи! ❤️</h3>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
