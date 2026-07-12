@@ -14,20 +14,23 @@ yesButton.onclick = function () {
 
 const noButton = document.getElementById("no");
 
-noButton.addEventListener("mouseenter", function () {
+function moveButton() {
+
     attempts++;
+
     if (attempts >= 6) {
 
-    noButton.style.display = "none";
+        noButton.style.display = "none";
 
-   const message = document.getElementById("message");
+        const message = document.getElementById("message");
+        message.textContent = "❤️ Отказы не принимаются 🤭❤️";
+        message.style.opacity = "1";
 
-message.textContent = "️ Отказы не принимаются 🤭️";
+        yesButton.style.left = "90px";
 
-message.style.opacity = "1";
-    yesButton.style.left = "90px";
-    return;
-}
+        return;
+    }
+
     noButton.style.position = "absolute";
 
     const x = Math.random() * 300;
@@ -35,5 +38,7 @@ message.style.opacity = "1";
 
     noButton.style.left = x + "px";
     noButton.style.top = y + "px";
+}
 
-});
+noButton.addEventListener("mouseenter", moveButton); // компьютер
+noButton.addEventListener("touchstart", moveButton); // телефон
